@@ -1,0 +1,675 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*::selection{
+    color: #fff;
+    background-color: #000;
+}
+body{
+    background-color: #f7f7f7;
+    font-family: 'Roboto', Helvetica;
+}
+
+html, body{
+    height:100%;
+    width: 100%;
+}
+#nav {
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 25px;
+}
+#nav #nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+#nav-part2 #links a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333;
+    font-weight: 100;
+    font-size: 13px;
+    margin: 0 20px;
+}
+#nav-part2 #icons i {
+    font-size: 18px;
+    margin: 0 20px;
+    font-weight: 100;
+}
+#links {
+    padding: 10px;
+}
+#nav-part1 {
+    height: 82px;
+    overflow: hidden;
+}
+#nav-part1 svg {
+    display: block;
+}
+#icons {
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #f7f7f7;
+}
+
+
+#cursor{
+    height: 150px;
+    width: 150px;
+    background-color: #C4D7C5;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%) scale(0);
+}
+#page1{
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    padding: 0 2vw;
+    padding-top: 27vh;
+    
+}
+#page1 h1{
+    font-size: 15.8vw;
+    font-family: futura;
+    text-transform: uppercase;
+    line-height: 14vw ;
+    letter-spacing: -8px;
+}
+#video-container{
+    height: 100vh;
+    width: 100%;
+   margin-top: 1vw;
+   position: relative;
+}
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#video-container #play{
+    padding: 3vw 2.2vw;
+    background-color: #000;
+    color: #fff;
+    font-size: 1.5vw;
+    position: fixed;
+    text-transform: uppercase;
+    font-family: futura;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+}
+.page2-line{
+    height: 20vh;
+    width: 100%;
+    padding: 10vw 2vw 0 2vw;
+}
+.page2-line .line-break{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 100;
+}
+.page2-line .hr-line{
+    border: 0.3px solid #333;
+}
+
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 1vw 3vw 1vw;
+    justify-content: space-between;
+}
+#page2 .elem{
+    height: 100%;
+    width: 32%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#page2 .elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    scale: 1.1;
+}
+
+#page2 .elem .dets{
+    height: 60px;
+    border-radius: 50px;
+    width: 80%;
+    position: absolute;
+    z-index: 9;
+    background-color: #F2DCCB;
+}
+#page2 .elem .dets:hover{
+    height: 200px;
+}
+
+#agenda{
+    height: 50vh;
+    width: 100%;
+    padding-left: 2vw;
+}
+
+#agenda .agenda-heading{
+    float: left;
+    width: 50%;
+    font-size: 56px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+#agenda .agenda-description{
+    float: right;
+    width: 50%;
+    padding-left: 250px;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 0.01rem;
+    line-height: 1.5;
+}
+#agenda .agenda-description p{
+    width: 70%;
+}
+
+#agenda .agenda-description span{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+    line-height: 48px;
+    font-size: 12px;
+}
+
+#page3{
+    min-height: 120vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.child{
+    height: 54vh;
+    width: 38vw;
+    margin: 70px 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.child img{
+    height: 100%;
+    padding-bottom: 50px;
+}
+.child-info h3{
+    font-size: 12px;
+    font-weight: 100;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.child-info span{
+    font-size: 11px;
+    font-weight: 100;
+    padding-left: 40%;
+}
+.line{
+    height: 30vh;
+    width: 100%;
+    padding: 8vw 2vw 1vw 2vw;
+}
+.line .line-break{
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.line .hr-line{
+    border: 0.3px solid #333;
+}
+
+#page4{
+    min-height: 120vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+#page4 .message-text{
+    text-align: center;
+    /* padding: 1vw 2vw; */
+}
+#page4 .message-text h1{
+    font-size: 75px;
+    padding: 3vw 10vw;
+    text-transform: uppercase;
+    line-height: 1em;
+    letter-spacing: -0.03em;
+}
+#page4 .message-text .btn{
+    padding: 50px 60px ;
+}
+#page4 .message-text  .message-btn{
+    padding: 25px  80px;
+    background-color: #000;
+    font-size: 12px;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+    line-height: 1em;
+    letter-spacing: 0.06em;
+    color: #F7F7F7;
+    border: none;
+    border-radius: 3em;
+}
+#page4 .message-text p{
+    margin-left: 40%;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+    max-width: 18em;
+    text-align: center;
+}
+
+.line .line-break .email{
+    height: 46px;
+    width: 100%;
+    padding: -2px 20px;
+    box-sizing: border-box;
+    letter-spacing: 1.5px;
+    border: none;
+    background-color: transparent;
+    color: #000;
+    outline: none;
+    border: none;
+    resize: none;
+    text-transform: uppercase;
+    overflow: hidden;
+
+}
+.line .line-break .email::placeholder{
+    font-family: 'futura';
+    font-size: 42px;
+    font-weight: 800;
+    color: #000;  
+}
+.line .line-break .reset-button{
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+}
+
+#page5{
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    padding: 5vw 2vw;
+}
+#page5 .connect{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#page5 .connect .social-media ul{
+    font-size: 14px;
+    font-weight: 100;
+    list-style: none;
+    line-height: 1.5em;
+    letter-spacing: 0.01em;
+}
+#page5 .connect .social-media .list-heading{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 100;
+    color: #7B7B7B;
+    margin-bottom: 16px;
+}
+#page5 .connect .faq ul{
+    font-size: 14px;
+    font-weight: 100;
+    direction: rtl;
+    list-style: none;
+    line-height: 1.5em;
+    letter-spacing: 0.01em;
+}
+#page5 .connect .faq .list-heading{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 100;
+    color: #7B7B7B;
+    margin-bottom: 16px;
+}
+#page5 .connect .logo{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#page5 .connect .logo svg{
+    height: 220px;
+    width: 210px;
+}
+#page5 .connect .logo .footer{
+    margin-top: 88px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+#page5 .connect .logo .footer span{
+    color: #7B7B7B;
+}
+#page5 .connect .logo .footer a{
+    padding-left: 30px;
+    text-decoration: none;
+    color: #7B7B7B;
+    margin-bottom: 60px;
+}
+.acknowledgment p{
+    min-height: 30vh;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-bottom: 64px;
+    padding: 0 220px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    #nav {
+        /* height: 100px; */
+        width: 100%;
+        /* background-color: burlywood; */
+        position: fixed;
+        z-index: 99;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    #nav #nav-part2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    #links {
+        padding: 10px;
+        display: none;
+    }
+
+    #nav-part1 {
+        /* background-color: RED; */
+        height: 67px;
+        overflow: hidden;
+    }
+
+    #nav-part1 svg {
+        display: block;
+        height: 67px;
+        width: 80px;
+    }
+    #nav #two-good-logo{
+        height: 40px;
+        margin-left: -20px;
+    }
+
+    #icons {
+        padding: 7px;
+        border-radius: 50px;
+        background-color: #F7F7F7;
+    }
+
+    #nav-part2 #icons i {
+        font-size: 15px;
+        margin: 0 20px;
+        font-weight: 100;
+    }
+
+    #page1 {
+        min-height: 70vh;
+        width: 100%;
+        padding: 0 3vw;
+        padding-top: 25vh;
+
+    }
+
+    #page1 h1 {
+        font-size: 15vw;
+        text-align: center;
+        letter-spacing: -3px;
+    }
+
+    #video-container {
+        height: 65vh;
+        margin-top: 3vw;
+    }
+
+    #video-container #play {
+        padding: 9.5vw 7.2vw;
+        font-size: 4.5vw;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+        scale: 1;
+        transform: translate(-50%, -50%);
+    }
+
+    #page2 {
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 5vw 3vw;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #page2 .elem {
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 3vw;
+    }
+
+    #agenda{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 2vw;
+        
+    }
+    
+    #agenda .agenda-heading{
+       text-align: center;
+        width: 100%;
+        font-size: 35px;
+        font-weight: 600;
+        letter-spacing: 0.05px;
+        line-height: 0.9;
+    }
+    
+    #agenda .agenda-description{
+        min-width: 100%;
+        text-align: center;
+        padding-top: 30px;
+        padding-left: 10px;
+        padding-right: 5px;
+        /* font-size: 13px; */
+
+    }
+    #agenda .agenda-description p{
+        width: 100%;
+        padding-left: 5px;
+        font-size: 15px;
+        font-weight: 200;
+    }
+    
+    #agenda .agenda-description span{
+        padding-bottom: 8px;
+        line-height: 40px;
+        font-size: 10px;
+    }
+
+
+    .child img {
+        height: 80%;
+    }
+    #page4{
+        padding-top: 15px;
+        min-height: 50%;
+    }
+   
+    #page4 .message-text h1{
+        font-size: 23px;
+        padding: 0 180px;
+        padding-bottom: 100px;
+    }
+    #page4 .message-text .btn{
+        padding: 20px 0;
+    }
+    #page4 .message-text p{
+        font-size: 13px;
+        margin-left: 35%;
+        padding-bottom: 20px;
+    }
+    
+    .line .line-break .email::placeholder{
+        font-size: 20px;  
+    }
+    .line .hr-line-email{
+        display: none;
+    }
+    #page5 .connect .social-media ul{
+        font-size: 12px;
+    }
+    #page5 .connect .social-media .list-heading{
+        font-size: 10px;
+    }
+    #page5 .connect .faq ul{
+        font-size: 12px;
+    }
+    #page5 .connect .faq .list-heading{
+        font-size: 10px;
+    }
+    #page5 .connect .logo{
+        padding-top: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #page5 .connect .logo svg{
+        height: 200px;
+        width: 180px;
+    }
+    #page5 .connect .logo .footer{
+        margin-top: 88px;
+
+        font-size: 8px;
+    }
+
+    #page5 .connect .logo .footer a{
+        padding-left: 30px;
+        text-decoration: none;
+        color: #7B7B7B;
+        margin-bottom: 60px;
+    }
+    #page5 .acknowledgment p{
+        min-height: 38vh;
+        text-align: left;
+        font-size: 13px;
+        margin-bottom: 12px;
+        padding: 0 10px;
+    }
+   
+}
+
+
+@media (max-width: 500px) {
+    #video-container {
+        height: 45vh;
+        margin-top: 2vw;
+    }.page2-line .line-break{
+        font-size: 10px;
+    }
+    #agenda .agenda-heading{
+        font-size: 32px;
+    }
+    
+    #agenda .agenda-description{
+        padding-left: 20px;
+        padding-right: 25px;
+
+    }
+    #agenda .agenda-description p{
+        width: 100%;
+        padding-left: 5px;
+        font-size: 15px;
+        font-weight: 200;
+    }
+    
+    #agenda .agenda-description span{
+        padding-bottom: 8px;
+        line-height: 40px;
+        font-size: 10px;
+    }
+    .child img {
+        height: 60%;
+    }
+    #page4{
+        padding-top: 15px;
+        min-height: 50%;
+    }
+   
+    #page4 .message-text h1{
+        font-size: 23px;
+        padding: 0 120px;
+        padding-bottom: 100px;
+    }
+    #page4 .message-text .btn{
+        padding: 20px 0;
+    }
+    #page4 .message-text p{
+        font-size: 13px;
+        margin-left: 28%;
+        padding-bottom: 20px;
+    }
+    .line .line-break{
+        font-size: 10px;
+    }
+    /* .line .line-break .hr-line-email{
+        visibility: visible;
+    } */
+    #page5 .connect .logo svg{
+        height: 100px;
+        width: 80px;
+    } 
+    #page5 .acknowledgment p{
+        text-align: left;
+        font-size: 13px;
+        margin-bottom: 11px;
+        padding: 0 20px;
+    }
+   
+}
