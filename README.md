@@ -1,6 +1,5 @@
 # tow-good-co
 Asthetic and minimalist website
-**Project Title: Two Good Co Website Clone**
 
 Welcome to the Two Good Co Website project! This endeavor is designed to elevate your frontend skills.
 By replicating the Two Good Co website, you'll delve into advanced frontend techniques, responsive design, 
